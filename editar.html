@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Index</title>
+</head>
+
+<body>
+
+    <!--
+        creamos el jumbotron de bootstrap en donde pasamos la imagen
+    -->
+    <div class="jumbotron jumbotron-fluid" id="jumbo">
+        <!-- aqui va el banner-->
+    </div>
+
+    <!-- titulo superir de la tabla -->
+    <div class="text-center">
+        <h3>
+            EDITAR ESTUDIANTE
+        </h3>
+    </div>
+    <hr>
+    <hr>
+    <div class="container">
+        <main class="md:w-3/5 xl:w-4/5 px-5 py-10 bg-gray-200">
+            <div class="flex flex-col mt-10 items-center">
+                <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12">
+                    <div class="shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                        <form id="formulario" class="bg-white p-3 text-center" method="POST">
+
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre:</label>
+                                <input
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="nombre" name="nombre" type="text" placeholder="Nombre Estudiante" />
+
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Edad:</label>
+                                <input
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="edad" name="Edad" type="text" placeholder="Edad Estudiante" />
+
+
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="nota">Altura:</label>
+                                <input
+                                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="altura" name="Altura" type="text" placeholder="Altura Estudiante" />
+                                
+                                <input type="hidden" name="id" id="id" value=""/>
+                                <input type="submit"
+                                    class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2  bg-info text-white uppercase font-bold"
+                                    value="Editar Estudiante" />
+                                <a href="index.html">
+                                    <input type="button" value="cancelar"  class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2  bg-danger text-white uppercase font-bold">
+                                </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="js/ediarEstudiante.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

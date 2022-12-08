@@ -1,0 +1,28 @@
+{
+  "estudiantes": [
+    {
+      "nombre": "Andres Felipe",
+      "edad": "22",
+      "altura": "1.73",
+      "id": 4
+    },
+    {
+      "nombre": "Yusblendi Bohorquez",
+      "edad": "22",
+      "altura": "1.68",
+      "id": 6
+    },
+    {
+      "nombre": "Vermen Reiner",
+      "edad": "45",
+      "altura": "180",
+      "id": 7
+    },
+    {
+      "nombre": "Snoop Dogg",
+      "edad": "56",
+      "altura": "180",
+      "id": 8
+    }
+  ]
+}

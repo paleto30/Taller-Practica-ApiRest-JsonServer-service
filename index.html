@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Index</title>
+</head>
+
+<body>
+
+  <!--
+        creamos el jumbotron de bootstrap en donde pasamos la imagen
+    -->
+  <div class="jumbotron jumbotron-fluid" id="jumbo">
+    <!-- aqui va el banner-->
+  </div>
+
+  <!-- titulo superir de la tabla -->
+  <div class="text-center">
+    <h3>
+      ESTUDIANTES
+    </h3>
+  </div>
+  <hr>
+
+  <!-- btn modal-->
+  <div class="container-fluid text-center">
+    <button type="button" class="btn btn-primary boton " id_user="${id_usuario}" data-toggle="modal"
+      data-target="#exampleModal">
+      Agregar Estudiante
+    </button>
+  </div>
+
+
+  <hr>
+  <!-- aqui tenemos la tabla  -->
+  <div class="container">
+    <div>
+      <table class="table table-info" id="listUser">
+        <thead>
+          <tr>
+            <th>NOMBRE</th>
+            <th>EDAD</th>
+            <th>ALTURA</th>
+            <th>ACCIONES</th>
+          </tr>
+        </thead>
+        <tbody id="listado-estudiantes">
+          <!-- aqui van los usuarios-->
+    
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Informacion del estudiante</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--
+                    aqui va el card  
+                -->
+          <!--sidebar-->
+          <main class="md:w-3/5 xl:w-4/5 px-5 py-10 bg-gray-200">
+            <h2 class="text-3xl font-light text-center">Nuevo Estudiante</h2>
+
+            <div class="flex flex-col mt-10 items-center">
+              <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12">
+                <div class="shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+                  <form id="formulario" class="bg-white p-3" method="POST">
+                    <div class="mb-4">
+                      <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre</label>
+                      <input
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="nombre" name="nombre" type="text" placeholder="Nombre Estudiante" />
+                    </div>
+
+
+                    <div class="mb-4">
+                      <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Edad</label>
+                      <input
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="edad" name="Edad" type="text" placeholder="Edad Estudiante" />
+                    </div>
+
+                    <div class="mb-4">
+                      <label class="block text-gray-700 text-sm font-bold mb-2" for="nota">Altura</label>
+                      <input
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="altura" name="Altura" type="text" placeholder="Altura Estudiante" />
+                    </div>
+
+                    <input type="submit"
+                      class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2  bg-dark text-white uppercase font-bold"
+                      value="Agregar Estudiante" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/nuevoEstudiante.js" type="module"></script>
+  <script src="js/app.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

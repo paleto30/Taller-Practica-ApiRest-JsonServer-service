@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#jumbo{
+    background-image: url(uts.jpg);
+    height: 405px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
